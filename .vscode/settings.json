@@ -1,0 +1,6 @@
+{
+    "flake8.args": [
+        "--ignore=E902"
+    ],
+    "files.insertFinalNewline": true
+}
