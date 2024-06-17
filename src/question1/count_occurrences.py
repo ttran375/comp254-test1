@@ -1,11 +1,9 @@
 def count_occurrences(arr, target):
-    if len(arr) == 0:
-        return 0
-    else:
-        if arr[0] == target:
-            return 1 + count_occurrences(arr[1:], target)
-        else:
-            return count_occurrences(arr[1:], target)
+    return (
+        0
+        if len(arr) == 0
+        else (1 if arr[0] == target else 0) + count_occurrences(arr[1:], target)
+    )
 
 
 test_array = [1, 2, 3, 4, 2, 2, 5, 2, 6]
