@@ -8,17 +8,16 @@ def count_occurrences(arr, target):
 
 test_array = [1, 2, 3, 4, 2, 2, 5, 2, 6]
 target_element = 2
-count = count_occurrences(test_array, target_element)
-print(f"Test Case 1: The element {target_element} appears {count} times in the array.")
+print(f"Test Case 1: The element {target_element} appears {count_occurrences(test_array, target_element)} times in the array.")
 
 
 test_array = [1, 3, 4, 5, 6]
-target_element = 2
-count = count_occurrences(test_array, target_element)
-print(f"Test Case 2: The element {target_element} appears {count} times in the array.")
+target_element = 3
+
+print(f"Test Case 2: The element {target_element} appears {count_occurrences(test_array, target_element)} times in the array.")
 
 
 test_array = []
-target_element = 2
-count = count_occurrences(test_array, target_element)
-print(f"Test Case 3: The element {target_element} appears {count} times in the array.")
+target_element = 4
+
+print(f"Test Case 3: The element {target_element} appears {count_occurrences(test_array, target_element)} times in the array.")
